@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#f09a4a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icoon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icoon.svg" />
+    <title>Kattenkwaad in de Kriebelstraat</title>
+  </head>
+  <body>
+    <div id="spel"></div>
+    <div id="hud" hidden>
+      <div class="meters">
+        <div class="meter" title="Ondeugd"><span>😼</span><div class="buis"><div id="meter-ondeugd" class="vulling ondeugd"></div></div></div>
+        <div class="meter" title="Buurthart"><span>💛</span><div class="buis"><div id="meter-hart" class="vulling hart"></div></div></div>
+      </div>
+      <div id="missie"></div>
+      <div class="knoppen">
+        <button id="knop-voorlezen" aria-label="Voorlezen">🔊</button>
+        <button id="knop-menu" aria-label="Naar het menu">🏠</button>
+      </div>
+      <div id="meldingen"></div>
+    </div>
+    <div id="laag"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

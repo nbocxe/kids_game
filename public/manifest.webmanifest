@@ -1,0 +1,12 @@
+{
+  "name": "Kattenkwaad in de Kriebelstraat",
+  "short_name": "Kattenkwaad",
+  "lang": "nl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#5fa04e",
+  "theme_color": "#f09a4a",
+  "icons": [{ "src": "icoon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

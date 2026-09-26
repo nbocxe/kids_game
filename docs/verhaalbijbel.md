@@ -1,6 +1,6 @@
 # Verhaalbijbel: Kattenkwaad in de Kriebelstraat
 
-> Status: **concept, wacht op goedkeuring van Nannet** (toon en personages).
+> Status: **goedgekeurd** (toon en personages). Fase 1 bevat oma Toos, meneer Brom, de slof en twee eindes.
 
 ## De belofte
 Eén zonnige zaterdag in de Kriebelstraat. Jij bent de ondeugendste bewoner van de straat, en vandaag wil je
@@ -41,10 +41,13 @@ de grootste grap ooit uithalen. Maar wat voor grappenmaker word jij?
 **Ochtend: "Wie ben jij?"**
 - Je verkent de straat. Twee streken zijn beschikbaar: belletje lellen bij oma Toos en de kabouter van meneer Brom
   omdraaien.
-- **Splitsmoment 1:** Snoes, de kat van meneer Brom, zit vast in de boom en meneer Brom is ten einde raad.
-  - *"Bel nu snel aan en ren!"* → Ondeugd +2, vlag `brom_geplaagd`
-  - *"Help Snoes uit de boom"* (Moos klimt zelf, Pim en Tobber halen de ladder van bakker Bol) →
-    Buurthart +2, vlag `brom_vriend`
+- **Splitsmoment 1: de slof** (gebouwd in fase 1). Snoes, de kat van meneer Brom, heeft zijn allerliefste slof
+  meegenomen naar het park. Bij Tobber heeft Tobber de slof zelf begraven. Jij vindt hem.
+  - *"Verstop de slof nog beter"* → Ondeugd +2, vlag `brom_geplaagd`
+  - *"Zet de slof op het hoofd van Kees"* → Ondeugd +1, Buurthart +1, vlag `slof_kabouter`
+  - *"Breng de slof stiekem terug"* → Buurthart +2, vlag `brom_vriend`
+  > Eerder stond hier "Snoes zit vast in de boom, bel aan en ren". Dat is geschrapt volgens regel 2: je haalt
+  > geen streek uit bij iemand die net verdrietig is, en een dier in nood hoort niet bij een grap.
 
 **Middag: "De tweeling"**
 - Fiep & Floor dagen je uit: wie haalt de beste grap uit?

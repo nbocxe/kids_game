@@ -10,9 +10,27 @@ verhaal, zoals in *Bandersnatch* en *Fable*.
   speelontwerper, de lief-stout-bewaker, de tekenaar, de game-bouwer en de speeltester.
 
 ## Fasering
-1. **Fase 0, team en fundament** ← *nu*
-2. Fase 1, speelbaar prototype (één straat, 2 buren, belletje lellen, één splitsmoment, 2 eindes)
+1. Fase 0, team en fundament ✅
+2. **Fase 1, speelbaar prototype** ✅ ← *nu*: één straat, 2 buren, belletje lellen, één splitsmoment, 2 eindes
 3. Fase 2, het hele verhaal (3 dagdelen, 6 eindes, plakboek)
 4. Fase 3, afwerking (tekeningen, geluid, voorlezen, PWA)
 
-Techniek (vanaf fase 1): Vite, TypeScript, Phaser 3 en een statische PWA, zonder account of server.
+## Spelen en ontwikkelen
+
+```bash
+npm install
+npm run dev        # speel op http://localhost:5173 (ook vanaf een tablet in hetzelfde netwerk)
+npm test           # verhaalmotor, route-verkenner, toonregels en kaart
+npm run typecheck
+npm run e2e        # bouwt en speelt twee routes echt in Chromium (tablet en telefoon), met screenshots
+npm run build      # statische site in dist/, als app op het beginscherm te zetten
+```
+
+Techniek: Vite, TypeScript, Phaser 4 en een statische PWA, zonder account of server.
+
+- `src/verhaal/verhaal.ts`: **het verhaal als data** (scènes, keuzes, vlaggen, eindes). Hier schrijf je nieuwe
+  stukken.
+- `src/verhaal/verhaalmotor.ts`: voert het verhaal uit (pure functies, getest).
+- `src/verhaal/verkenner.ts`: de route-verkenner die alle keuzes afloopt.
+- `src/engine/`: de straat (kaart, looproutes, tekeningen, Phaser-scène).
+- `src/ui.ts`: dialogen, splitsmomenten, het minispel belletje lellen, eindes en het plakboek.
